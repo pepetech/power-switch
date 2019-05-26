@@ -934,7 +934,7 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 </package>
 </packages>
 <symbols>
-<symbol name="EFM32PG1B200_Q32">
+<symbol name="EFM32XG1B200_QFN32">
 <pin name="PA0" x="-38.1" y="-2.54" length="middle"/>
 <pin name="PA1" x="-38.1" y="-5.08" length="middle"/>
 <wire x1="-33.02" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
@@ -1052,9 +1052,9 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="EFM32PG1B200_Q32" prefix="U">
+<deviceset name="EFM32PG1B200F*M32" prefix="U">
 <gates>
-<gate name="G$1" symbol="EFM32PG1B200_Q32" x="0" y="0"/>
+<gate name="G$1" symbol="EFM32XG1B200_QFN32" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="QFN32">
@@ -1093,7 +1093,9 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="G$1" pin="VSS@0" pad="33"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="128G"/>
+<technology name="256G"/>
+<technology name="256I"/>
 </technologies>
 </device>
 </devices>
@@ -1759,7 +1761,7 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP1631X" prefix="U">
+<deviceset name="MCP1631*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP1631X" x="0" y="0"/>
 </gates>
@@ -1776,7 +1778,8 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <connect gate="G$1" pin="VIN" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="1"/>
+<technology name="2"/>
 </technologies>
 </device>
 </devices>
@@ -1803,7 +1806,7 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP9802" prefix="U">
+<deviceset name="MCP9802-A*" prefix="U">
 <gates>
 <gate name="G$1" symbol="MCP9802" x="0" y="0"/>
 </gates>
@@ -1817,7 +1820,10 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="0"/>
+<technology name="1"/>
+<technology name="2"/>
+<technology name="3"/>
 </technologies>
 </device>
 </devices>
@@ -8166,7 +8172,7 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <part name="TC1" library="TagConnect" deviceset="TC2050-IDC" device="-NL" value="TC2050-IDC-NL"/>
 <part name="2V1" library="Supply Symbol" deviceset="3V3" device=""/>
 <part name="GND11" library="Supply Symbol" deviceset="GND" device=""/>
-<part name="U6" library="EFM32" deviceset="EFM32PG1B200_Q32" device=""/>
+<part name="U6" library="EFM32" deviceset="EFM32PG1B200F*M32" device="" technology="256G"/>
 <part name="FRAME2" library="Frame" deviceset="A3-LANDSCAPE" device=""/>
 <part name="L1" library="Inductor" deviceset="INDUCTOR" device="-0603" value="4.7uH">
 <attribute name="OCLCSC" value="C281111"/>
@@ -8197,7 +8203,7 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <part name="R14" library="Resistor" deviceset="RESISTOR" device="-0603" value="100K Ohms"/>
 <part name="GND5" library="Supply Symbol" deviceset="GND" device=""/>
 <part name="2V6" library="Supply Symbol" deviceset="3V3" device=""/>
-<part name="U1" library="Microchip" deviceset="MCP1631X" device=""/>
+<part name="U1" library="Microchip" deviceset="MCP1631*" device="" technology="1"/>
 <part name="ACDC1" library="ACDC Converter" deviceset="HLK-PM" device="12"/>
 <part name="CON1" library="Generic Connector" deviceset="KF301-3P" device=""/>
 <part name="CON2" library="Generic Connector" deviceset="KF301-3P" device=""/>
@@ -8268,7 +8274,7 @@ Source: &lt;a href="http://www.littelfuse.com/~/media/electronics/datasheets/tvs
 <part name="GND42" library="Supply Symbol" deviceset="GND" device=""/>
 <part name="2V14" library="Supply Symbol" deviceset="3V3" device=""/>
 <part name="2V15" library="Supply Symbol" deviceset="3V3" device=""/>
-<part name="U2" library="Microchip" deviceset="MCP9802" device=""/>
+<part name="U2" library="Microchip" deviceset="MCP9802-A*" device="" technology="0"/>
 <part name="CON3" library="JST" deviceset="4P" device="-SH-TOP"/>
 <part name="R9" library="Resistor" deviceset="RESISTOR" device="-0603" value="10K Ohms"/>
 <part name="2V16" library="Supply Symbol" deviceset="3V3" device=""/>
